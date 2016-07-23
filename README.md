@@ -19,9 +19,11 @@ This is a variation of **Purple Slimer** Ghost template which is itself a variat
 3. Clone the `ghostdance` template in there, so that the root of the `ghostdance` clone is inside themes (*ie*., `themes/ghostdance`):
 
     ```sh
+    cd themes/
     git clone https://github.com/iacchus/ghostdance.git
     ```
-4. Enter `ghostdance` subdirectory and remove the hidden `.git` repository. This makes it easier to commit changes to hubpress after editing the theme's template.
+4. Enter `ghostdance` subdirectory and remove the hidden `.git` repository. This makes it easier to commit changes to hubpress after editing the theme's template. Because you will be inside your HubPress repository and not inside a `ghostdance` repository.
+
     ```sh
     cd ghostdance/
     rm -rf .git/
@@ -34,7 +36,7 @@ This is a variation of **Purple Slimer** Ghost template which is itself a variat
     git pull --rebase
     git push
     ```
-6. Go to admin panel of your blog *username*.github.io**/hubpress**, go to `Settings` -> `Site` and set ghostdance as your template.
+6. Go to admin panel of your blog at https://*username*.github.io**/hubpress**, go to `Settings` -> `Site` and set ghostdance as your template.
 
 And you are all ready. :)
 
