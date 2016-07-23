@@ -56,7 +56,7 @@ Alternatively you can [download the zip tarball](https://github.com/iacchus/ghos
     ```sh
     cp ~/cover_filename.png images/
     git add . # note that this command has a dot at the end meaning 'track everything in current directory'
-    git commit -a -m 'Added cover_filename.png added to my HupPress repo'
+    git commit -a -m 'Added cover_filename.png to my HupPress repo'
     git pull --rebase
     git push
     ```
