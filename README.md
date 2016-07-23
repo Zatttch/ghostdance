@@ -2,15 +2,16 @@
 
 Ghost Dance theme for [HubPress](https://github.com/HubPress/hubpress.io) blogging engine.
 
-it also can be transformed in a Ghost theme with little or no efforts.
+It also can be transformed in a [Ghost](https://github.com/TryGhost/Ghost) [blogging engine] theme with little or no efforts.
 
 ## Due Credits
 
 This is a variation of **Purple Slimer** Ghost template which is itself a variation of **GhostScroll** template for Ghost.
 
-[GhostScroll](https://github.com/zebheone/GhostScroll)
+[GhostScroll](https://github.com/grmmph/GhostScroll)
 
 [Purple Slimer](https://github.com/zebheone/GhostScroll)
+
 
 ## Installation
 
@@ -39,6 +40,22 @@ This is a variation of **Purple Slimer** Ghost template which is itself a variat
 6. Go to admin panel of your blog at https://*username*.github.io**/hubpress**, go to `Settings` -> `Site` and set ghostdance as your template.
 
 And you are all ready. :)
+
+### Alternative Install
+
+Alternatively you can [download the zip tarball](https://github.com/iacchus/ghostdance/archive/master.zip) from GitHub and unzip it inside themes, (following from point 3. above)
+
+## How to Edit this Theme
+
+The HupPress themes are developed alike Ghost themes, and Ghost Themes documentation should be enough to get you started. Also it uses Handlebars markup to render templates.
+
+[Ghost Themes documentation](http://themes.ghost.org/) is here.
+
+Why don't you also give a look at [Handlebars website](http://handlebarsjs.com/)...
+
+## Philosophy
+
+When I made this I had in mind an clear and simple template for showing articles, with very little egotrip.
 
 ## License
 
