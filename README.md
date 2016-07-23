@@ -31,7 +31,7 @@ This is a variation of **Purple Slimer** Ghost template which is itself a variat
 5. Go back to the root your fork of your HubPress repository, commit the changes and push:
 
     ```sh
-    git add .
+    git add . # note that this command has a dot at the end meaning 'track everything in current directory'
     git commit -a -m 'ghostdance Theme added to my HupPress repo'
     git pull --rebase
     git push
