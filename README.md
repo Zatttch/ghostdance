@@ -69,7 +69,11 @@ Why don't you also give a look at [Handlebars website](http://handlebarsjs.com/)
 
 ## Philosophy
 
-When I made this I had in mind an clear and simple template for showing articles, with very little or none egotrip.
+When I made this I had in mind an clear and simple template for showing articles, with very little or no egotrip.
+
+## Support
+
+You can talk what you want or need at this [repo issues](https://github.com/iacchus/ghostdance/issues), we are not picky on that.
 
 ## License
 
