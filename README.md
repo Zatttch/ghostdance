@@ -12,6 +12,9 @@ This is a variation of **Purple Slimer** Ghost template which is itself a variat
 
 [Purple Slimer](https://github.com/zebheone/GhostScroll)
 
+## Demo or it didn't happen!
+
+I am currently using `ghostdance` on my blog at github.io, [The Leet Crafting](https://iacchus.github.io/).
 
 ## Installation
 
