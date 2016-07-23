@@ -6,7 +6,7 @@ It also can be transformed in a [Ghost](https://github.com/TryGhost/Ghost) [blog
 
 ## Due Credits
 
-This is a variation of **Purple Slimer** Ghost template which is itself a variation of **GhostScroll** template for Ghost.
+This is a variation of **Purple Slimer** Ghost template which is itself a variation of **GhostScroll** template also for Ghost.
 
 [GhostScroll](https://github.com/grmmph/GhostScroll)
 
@@ -37,7 +37,7 @@ This is a variation of **Purple Slimer** Ghost template which is itself a variat
     git pull --rebase
     git push
     ```
-6. Go to admin panel of your blog at https://*username*.github.io**/hubpress**, go to `Settings` -> `Site` and set ghostdance as your template.
+6. Go to the admin panel of your blog at https://*username*.github.io**/hubpress**, go to `Settings` -> `Site` and set ghostdance as your template; save the changes.
 
 And you are all ready. :)
 
@@ -45,9 +45,23 @@ And you are all ready. :)
 
 Alternatively you can [download the zip tarball](https://github.com/iacchus/ghostdance/archive/master.zip) from GitHub and unzip it inside themes, (following from point 3. above)
 
+## How to Change the Cover Image of your Blog
+
+1. Put the image you want to set as cover inside your **HubPress** `images/` directory, which exists on the root directory of it. 
+2. Commit the changes and push to your GitHub repo
+
+    ```sh
+    cp ~/cover_filename.png images/
+    git add . # note that this command has a dot at the end meaning 'track everything in current directory'
+    git commit -a -m 'Added cover_filename.png added to my HupPress repo'
+    git pull --rebase
+    git push
+    ```
+3. Go to the admin panel of your blog at https://*username*.github.io**/hubpress**, go to `Settings` -> `Site` and set `Cover Image` as in the example to `images/cover_filename.png` as your template; save the changes. 
+
 ## How to Edit this Theme
 
-The HupPress themes are developed alike Ghost themes, and Ghost Themes documentation should be enough to get you started. Also it uses Handlebars markup to render templates.
+The HupPress themes are developed alike [Ghost](https://github.com/TryGhost/Ghost) themes, and Ghost Themes documentation should be enough to get you started. Also it uses Handlebars markup to render templates.
 
 [Ghost Themes documentation](http://themes.ghost.org/) is here.
 
@@ -55,7 +69,7 @@ Why don't you also give a look at [Handlebars website](http://handlebarsjs.com/)
 
 ## Philosophy
 
-When I made this I had in mind an clear and simple template for showing articles, with very little egotrip.
+When I made this I had in mind an clear and simple template for showing articles, with very little or none egotrip.
 
 ## License
 
