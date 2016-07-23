@@ -1,6 +1,6 @@
 # ghostdance
 
-Ghost Dance theme for HubPress
+Ghost Dance theme for [HubPress](https://github.com/HubPress/hubpress.io) blogging engine.
 
 it also can be transformed in a Ghost theme with little or no efforts.
 
@@ -17,21 +17,23 @@ This is a variation of **Purple Slimer** Ghost template which is itself a variat
 1. HubPress runs on a GitHub repo, right? After you have your copy of HubPress up and running at GitHub, clone your fork of it to your local computer.
 2. Enter the `themes/` directory which exists on the HubPress repository root, and
 3. Clone the `ghostdance` template in there, so that the root of the `ghostdance` clone is inside themes (*ie*., `themes/ghostdance`):
-    `git clone https://github.com/iacchus/ghostdance.git`
+
+    ```sh
+    git clone https://github.com/iacchus/ghostdance.git
+    ```
 4. Enter `ghostdance` subdirectory and remove the hidden `.git` repository. This makes it easier to commit changes to hubpress after editing the theme's template.
-
-```sh
-cd ghostdance/
-rm -rf .git/
-```
-
+    ```sh
+    cd ghostdance/
+    rm -rf .git/
+    ```
 5. Go back to the root your fork of your HubPress repository, commit the changes and push:
-```sh
-git add .
-git commit -a -m 'ghostdance Theme added to my HupPress repo'
-git pull --rebase
-git push
-```
+
+    ```sh
+    git add .
+    git commit -a -m 'ghostdance Theme added to my HupPress repo'
+    git pull --rebase
+    git push
+    ```
 6. Go to admin panel of your blog *username*.github.io**/hubpress**, go to `Settings` -> `Site` and set ghostdance as your template.
 
 And you are all ready. :)
@@ -40,4 +42,4 @@ And you are all ready. :)
 
 This is released under MIT License.
 
-See [LICENSE](https://github.com/iacchus/ghostdance/blob/master/LICENSE)
+See [LICENSE](https://github.com/iacchus/ghostdance/blob/master/LICENSE).
