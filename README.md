@@ -78,6 +78,14 @@ When I made this I had in mind an clear and simple template for showing articles
 
 You can talk what you want or need at this [repo issues](https://github.com/iacchus/ghostdance/issues), we are not picky on that.
 
+## What is Coming Next? (To Do)
+
+* I need to develop tag context
+* I need to develop author context
+* I need to develop social links
+
+Apart of these things, and also to supply more decoration for asciidoc elements, the template is ready to use.
+
 ## License
 
 ```
