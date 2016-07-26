@@ -80,11 +80,9 @@ You can talk what you want or need at this [repo issues](https://github.com/iacc
 
 ## What is Coming Next? (To Do)
 
-* I need to develop tag context
-* I need to develop author context
-* I need to develop social links
+* It is needed to develop the links partial, but I am not going to for now as I don't use it.
 
-Apart of these things, and also to supply more decoration for asciidoc elements, the template is ready to use.
+* It is needed to supply more decoration for asciidoc elements, the template is ready to use.
 
 ## License
 
