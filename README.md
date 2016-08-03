@@ -74,6 +74,8 @@ Why don't you also give a look at [Handlebars website](http://handlebarsjs.com/)
 
 This theme allows to embed iPython Notebooks (exported as `.html`)
 
+It uses [rawgit.com](https://rawgit.com) (third-party service not affiliated to GitHub) to serve the embeds. It is a very good service tho.
+
 1. At your HubPress blog repo **root directory**, create a directory name `ipynb-html/`.
 2. Put there the notebooks you want to embed, as you would do with images. Commit and push to GitHub.
 3. To embed it in your posts, create an **iframe with the class ".ipynb-embed"** and **an `data-filename` attribute with the filename**. Like this, let's suppose the filename is `Untitled3.html`:
