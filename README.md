@@ -83,6 +83,7 @@ This theme allows to embed iPython Notebooks (exported as `.html`)
 <iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
 ++++
 ```
+
 ## Philosophy
 
 When I made this I had in mind an clear and simple template for showing articles, with very little or no egotrip.
