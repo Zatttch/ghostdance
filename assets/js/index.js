@@ -21,6 +21,33 @@ var $authorhead = $('#author-head');
 		}, 1000);
 	}
 	$(document).ready(function(){
+
+		var myrepo = window.location.host
+		var myuser = myrepo.split(".")[0]
+
+		var myhack = document.styleSheets[0].href
+		var mysplit = myhack.split("?")[1]
+		var mycommit = mysplit.split("=")[1]
+
+		function mydothis(el, myurl)
+		{
+			$.get(myurl,
+				function(response) {
+					$(el).contents().find('body').append(response);
+					$(el).height( $(el).contents().height() );	
+				}
+			);
+		}
+		$("iframe.ipynb-embed").each(function(){
+			var filename = $(this).data("filename");
+
+			// https://rawgit.com - not affiliated with GITHUB but a good service
+			var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
+
+			mydothis(this, myurl)
+
+		//	console.log("el:" + this + " myurl: " + myurl);
+		});
         
         // FitVids for responsive videos
         $('.post-content').fitVids();
@@ -107,6 +134,8 @@ var $authorhead = $('#author-head');
 		/*$('ul li').before('<span class="bult fa fa-asterisk icon-asterisk"></span>');
 		$('blockquote p').prepend('<span class="quo icon-quote-left"></span>');
 		$('blockquote p').append('<span class="quo icon-quote-right"></span>');*/
+
+
 	});
 	
 	/*$post.each(function () {
