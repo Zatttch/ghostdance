@@ -70,6 +70,18 @@ The HupPress themes are developed alike [Ghost](https://github.com/TryGhost/Ghos
 
 Why don't you also give a look at [Handlebars website](http://handlebarsjs.com/)...
 
+## iPython Notebook (html) Embed
+
+This theme allows to embed iPython Notebooks (exported as `.html`)
+
+1. At your HubPress blog repo **root directory**, create a directory name `ipynb-html/`.
+2. Put there the notebooks you want to embed, as you would do with images. Commit and push to GitHub.
+3. To embed it in your posts, create an iframe with the class ".ipynb-embed" and an `data-filename` attribute with the filename. Like this, let's suppose the filename is `Untitled3.html`:
+    ```
+++++
+<iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
+++++
+```
 ## Philosophy
 
 When I made this I had in mind an clear and simple template for showing articles, with very little or no egotrip.
