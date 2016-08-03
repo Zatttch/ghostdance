@@ -29,13 +29,21 @@ var $authorhead = $('#author-head');
 		var mysplit = myhack.split("?")[1]
 		var mycommit = mysplit.split("=")[1]
 
-		function mydothis(el, myurl)
+		var myothersplit = myhack.split("?")[0]
+		var myanothersplit = myothersplit.split("/")
+		var myassets = Array( myanothersplit[3], myanothersplit[4], myanothersplit[5]).join("/");
+		var mycsss = myassets + "/css"
+ 
+		function mydothis(el, myurl, mycsss)
 		{
 			$.get(myurl,
 				function(response) {
+					//$(el).contents().find("body").append("<style type=\"text/css\">body{padding:33px;}</style>");
+					$(el).contents().find("head").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/ipynb-custom.css" />'); // FIXME!!
 					$(el).contents().find('body').append(response);
 					$(el).height( $(el).contents().height() );	
-				}
+				},
+				"html"
 			);
 		}
 		$("iframe.ipynb-embed").each(function(){
@@ -44,7 +52,7 @@ var $authorhead = $('#author-head');
 			// https://rawgit.com - not affiliated with GITHUB but a good service
 			var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
 
-			mydothis(this, myurl)
+			mydothis(this, myurl, mycsss)
 
 		//	console.log("el:" + this + " myurl: " + myurl);
 		});
