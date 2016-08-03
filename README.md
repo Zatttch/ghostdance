@@ -84,6 +84,8 @@ This theme allows to embed iPython Notebooks (exported as `.html`)
 ++++
 ```
 
+The stylesheet assets/css/ipynb-custom.css is injected (appended) to that iframe's body, so you can use it to style the notebooks.
+
 ## Philosophy
 
 When I made this I had in mind an clear and simple template for showing articles, with very little or no egotrip.
