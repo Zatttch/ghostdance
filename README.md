@@ -72,9 +72,9 @@ Why don't you also give a look at [Handlebars website](http://handlebarsjs.com/)
 
 ## ABC Musical Notation to Sheet Music
 
-This theme allows you to generate sheet music by writing a GitHub-lile code block with `abc` as syntax (three bacticks plus abc: \`\`\`abc) 
+This theme allows you to generate sheet music by using [abc musical notation](http://abcnotation.com/), writing a markdown GitHub-like code block with `abc` as syntax (three bacticks plus abc: \`\`\`abc).
 
-Example, for embedding Morrison's jig score you can create a code block this way:
+Example, for embedding Morrison's jig score you can create a abc notation code block this way:
 
     ```abc
     X: 1
@@ -90,6 +90,8 @@ Example, for embedding Morrison's jig score you can create a code block this way
     Bee fee|aee fee|Bee fee|faf def|
     g3 gfe|def g2d|edc d2A|BAG FED|
     ```
+
+For this it uses [ABCJS](https://github.com/paulrosen/abcjs) script using [rawgit.com](https://rawgit.com) as third party service for serving the JS.
 
 ## Jupyter / iPython Notebook (html) Embed
 
