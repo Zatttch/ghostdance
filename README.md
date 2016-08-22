@@ -91,7 +91,7 @@ Example, for embedding Morrison's jig score you can create a abc notation code b
     g3 gfe|def g2d|edc d2A|BAG FED|
     ```
 
-For this it uses [ABCJS](https://github.com/paulrosen/abcjs) script using [rawgit.com](https://rawgit.com) as third party service for serving the JS.
+For this it uses [ABCJS](https://github.com/paulrosen/abcjs) script.
 
 ## Jupyter / iPython Notebook (html) Embed
 
